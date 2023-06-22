@@ -6,27 +6,29 @@ from pathlib import Path
 
 logging.basicConfig(level=logging.INFO,format='[%(asctime)s]: %(message)s:')
 
+project_name = "TextSnap"
+
 file_list = [
     # github file
     ".github/workflow/.gitkeep", 
     # src folder
-    "src/__init__.py",
+    f"src/{project_name}/__init__.py",
     # src/components folder
-    "src/components/__init__.py",
+    f"src/{project_name}/components/__init__.py",
     # src/utils folder
-    "src/utils/__init__.py",
-    "src/utils/common.py",
+    f"src/{project_name}/utils/__init__.py",
+    f"src/{project_name}/utils/common.py",
     # src/logging folder
-    "src/logging/__init__.py",
+    f"src/{project_name}/logging/__init__.py",
     # src/config folder
-    "src/config/__init__.py",
-    "src/config/configuration.py",
+    f"src/{project_name}/config/__init__.py",
+    f"src/{project_name}/config/configuration.py",
     # src/pipeline folder
-    "src/pipeline/__init__.py",
+    f"src/{project_name}/pipeline/__init__.py",
     # src/entity folder
-    "src/entity/__init__.py",
+    f"src/{project_name}/entity/__init__.py",
     # src/constant folder
-    "src/constant/__init__.py",
+    f"src/{project_name}/constant/__init__.py",
     # config yaml file
     "config/config.yaml",
     # params yaml file
